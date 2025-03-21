@@ -8,19 +8,19 @@ cursor = cnx.cursor()
 cursor.execute("SHOW TABLES")
 for table in cursor:
     print(table)
-print(-----------------------------)
+print("-----------------------------")
 
 #uralkodó megjelenítése
 cursor.execute("SELECT * FROM uralkodo")
 for uralkodo in cursor:
     print(uralkodo)
-print(-----------------------------)
+print("-----------------------------")
 
 #mátyás
 cursor.execute("SELECT * FROM uralkodo WHERE nev ='I. Mátyás'")
 for uralkodo in cursor:
     print(uralkodo)
-print(------------------------------)
+print("-----------------------------")
 
 #Mátyás király adatai
 cursor.execute("SELECT szul, hal FROM uralkodo WHERE nev ='I. Mátyás'")
